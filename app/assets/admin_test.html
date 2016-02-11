@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+​
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Cart</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+​
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+​
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+​
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/app.css">
+​
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+​
+</head>
+​
+<body>
+​
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row">
+        <div class="add-product">
+            <form>
+                <div class="row">
+                    <div class="twelve columns">
+                        <label for="product-name">Product Name</label>
+                        <input class="u-full-width" type="text" placeholder="Product Name" id="product-name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="four columns">
+                        <label for="categories">Category</label>
+                        <select class="u-full-width" id="category">
+                            <option value="Option 1">Category 1</option>
+                            <option value="Option 2">Category 2</option>
+                            <option value="Option 3">Category 3</option>
+                        </select>
+                    </div>
+                    <div class="four columns">
+                        <label for="image">Image URL</label>
+                        <input class="image u-full-width" type="text" placeholder="img-image.jpg" id="image">
+                    </div>
+                    <div class="four columns">
+                        <label for="price">Price ($)</label>
+                        <input class="price u-full-width" type="number" id="price" placeholder="20">  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <label for="description">Description</label>
+                        <textarea class="u-full-width" name="description" id="description" placeholder="Pellentesque habitant morbi tristique senectus et netus."></textarea>
+                    </div>
+                </div>
+                <input class="button-primary u-pull-right" type="submit" value="Add Product">
+            </form>
+​
+        </div>
+        <!-- End Add-Product -->
+    </div>
+    
+    
+    <hr>
+    
+    
+    <div class="row">
+        <div class="view-products twelve columns">
+            <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Image URL</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product Name</td>
+                        <td>Category 1</td>
+                        <td>img-image.jpg</td>
+                        <td>$30</td>
+                        <td>Description</td>
+                        <td class="edit">Edit</td>
+                        <td class="delete">Delete</td>
+                    </tr>
+                    <tr>
+                        <td>Product Name</td>
+                        <td>Category 1</td>
+                        <td>img-image.jpg</td>
+                        <td>$30</td>
+                        <td>Description</td>
+                        <td class="edit">Edit</td>
+                        <td class="delete">Delete</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- End View-Products -->
+    </div>
+​
+​
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+​
+</html>

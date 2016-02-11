@@ -1,0 +1,159 @@
+/*  Global */
+.container {
+    min-width: 100%;
+    margin: auto;
+}
+
+.row {
+    max-width: 960px;
+    margin: auto;
+}
+
+
+/* Nav */
+
+.nav .cart-icon {
+    border: 1px solid #fff;
+    margin-right: 0;
+}
+
+.nav ul {
+    padding: 25px;
+}
+
+.nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 15px;
+    color: #fff;
+}
+
+
+
+/* Cart */
+.cart {
+    margin: auto;
+    margin-top: 50px;
+    width: 420px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+}
+
+.cart-title {
+    padding: 30px;
+    font-size: 30px;
+    background: #aef;
+}
+
+.cart-remove {
+    font-size: 10px;
+    padding-top: 5px;
+    color: #ccc;
+}
+
+.cart-product {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.cart-checkout {
+    border: 1px solid #EAEAEA;
+    background: #D5F4B5;
+    width: 418px;
+}
+
+.cart-checkout button {
+    width: 100%;
+    border: none;
+    padding-top: 5px;
+}
+
+
+
+/* Homepage - Hero */
+.hero {
+    min-height: 600px;
+    border-bottom: 1px solid #ccc;
+    margin: auto;
+    width: 100%;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background: #333;
+}
+
+.hero h1 {   
+    text-align: center;
+    color: white;
+    padding-top: 245px;
+}
+
+
+
+
+
+/* Filters / Browse / Search*/
+.filters {
+    padding-top: 25px;
+    border-bottom: 1px solid #ccc;
+    min-height: 50px;
+    background: #eee;
+}
+
+.filters ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
+}
+
+.filters ul li:first-child {
+    padding-left: 0px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.search {
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+/* Homepage - Products */
+
+.products-main {
+    margin-top: 25px;
+}
+
+.product-img {
+    background: #EBF5FB;
+    border: 1px solid #ccc;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+.product-info {
+    min-height: 55px;
+    border: 1px solid #ccc;
+    margin-top: -1px;
+}
+
+.product-name {
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.product-name p:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.price p {
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+

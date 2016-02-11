@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<!-- App Styles -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+​
+	<title></title>
+​
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+	
+	 <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+​
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/skeleton.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  
+	<!-- Vendor -->
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+​
+	<!-- App Controllers -->
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="site/controllers/shopCtrl.js"></script>
+	<script type="text/javascript" src="site/controllers/adminCtrl.js"></script>
+	<script type="text/javascript" src="site/controllers/loginCtrl.js"></script>
+	<script type="text/javascript" src="site/controllers/admin.addProductCtrl.js"></script>
+
+
+	<!-- App Services -->
+	<script type="text/javascript" src="site/services/api.srv.js"></script>
+	<script type="text/javascript" src="site/services/products.srv.js"></script>
+​
+</head>
+<body ng-app="shopApp">
+<div ui-view class="wrapper"></div>
+<a ui-sref="shop">Shop</a>
+<a ui-sref="admin">Admin</a>
+<a ui-sref="login">Login</a>
+​
+​
+</body>
+</html>
