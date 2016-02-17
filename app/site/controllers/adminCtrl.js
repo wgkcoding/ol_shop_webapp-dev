@@ -6,16 +6,16 @@ function adminCtrl(productSrv, $state) {
 	ctrl.$state = $state;
 	ctrl.productSrv = productSrv;
 
-//	ctrl.products = products;
+	// ctrl.products = products;
 
 
 
-	//Login check (later)
+	// Login check (later)
 
 
 
 
-	//watch for updates to products object
+	// watch for updates to products object
 
 	// $scope.$watch(function(){
  //    	return productSrv.products;
@@ -36,7 +36,7 @@ function adminCtrl(productSrv, $state) {
 	
 
 	localStorage.removeItem('authToken');
-	ctrl.$state.go('auth');
+	ctrl.$state.go('login');
 
 	}
 

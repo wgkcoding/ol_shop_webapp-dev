@@ -8,13 +8,13 @@ function loginCtrl(productSrv, $state, api) {
 //	ctrl.products = products;
 	ctrl.api = api;
 
-	ctrl.password;
-	ctrl.user;
+	ctrl.password = null;
+	ctrl.user = null;
 
 	ctrl.auth_btn = 'Continue';
 
 	if(localStorage.authToken){
-		ctrl.$state.go('admin');
+		// ctrl.$state.go('admin');
 	}
 }
 
