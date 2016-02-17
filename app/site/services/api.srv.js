@@ -9,7 +9,10 @@ ApiService.prototype.request = function(endpoint,data,method) {
 
   //build request
   if(method == 'POST'){
+    console.log(data);
     data = JSON.stringify(data);
+    console.log(data);
+    console.log("yo");
     return this.http.post(this.BASE_URL + endpoint,data)
   }
   else if(method == 'GET'){

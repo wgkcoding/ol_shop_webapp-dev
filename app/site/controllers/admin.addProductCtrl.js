@@ -1,6 +1,6 @@
-app.controller('addProductCtrl',addProductCtrl);
+app.controller('addProductCtrl',ProductCtrl);
 
-function addProductCtrl($stateParams,api,productSrv){
+function ProductCtrl($stateParams,api,productSrv){
 	var ctrl = this
 	ctrl.productSrv = productSrv;
 
@@ -27,14 +27,10 @@ function addProductCtrl($stateParams,api,productSrv){
 			for(var category in ctrl.categories){
 			if(ctrl.product.category == ctrl.category[category].value){
 
-			// 	}
-			// }
+				}
+		   }
 		})
 	}
-
-
-}
-}
 }
 
 ProductCtrl.prototype.addProduct = function(){

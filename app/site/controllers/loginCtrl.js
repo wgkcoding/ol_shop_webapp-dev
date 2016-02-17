@@ -8,44 +8,48 @@ function loginCtrl(productSrv, $state, api) {
 //	ctrl.products = products;
 	ctrl.api = api;
 
-	ctrl.password= null;
-	ctrl.user= null;
+	ctrl.password;
+	ctrl.user;
 
 	ctrl.auth_btn = 'Continue';
 
-//	if(localStorage.authToken){
-//		ctrl.$state.go('admin');
+	if(localStorage.authToken){
+		ctrl.$state.go('admin');
 	}
-
-
+}
 
 loginCtrl.prototype.login = function(){
 	var ctrl = this;
-	ctrl.$state.go('admin');
-	// var payload = {
-	// 	email:ctrl.email,
-	// 	password:ctrl.password
-	// }
-	// ctrl.auth_btn = "Authorizing";
-	// //make api call
-	// ctrl.api.request('/users/login',payload,'POST')
-	// .then(function(res){
-	// 	console.log(res);
-	// 	//successfull response
-	// 	if(res.status == 200){
-	// 		ctrl.auth_btn = "Success";
-	// 		//user exists
-	// 		if(res.data.user != null){
-	// 			ctrl.$state.go('admin');
-	// 		}
-	// 	}
-	// 	else{
-	// 		ctrl.auth_btn = 'Invalid Password';
-	// 	}
+	console.log(ctrl.user);
+	 var payload = {
+		email:ctrl.user,
+		password:ctrl.password
+		}
+		console.log(payload);
+
+		ctrl.auth_btn = "Authorizing";
+		//make api call
+		ctrl.api.request('/users/login',payload,'POST')
+		.then(function(res){
+			console.log(res);
+			console.log('test');
 		
-	// },function(){
-	// 	//error
-	// 	console.log(res);
-	// 	ctrl.auth_btn = "Error: Check console";
-	// })
+		//successfull response
+		if(res.status == 200){
+	 		ctrl.auth_btn = "Success";
+	 		//user exists
+	 		console.log(res);
+	 		if(res.data.user != null){
+ 				ctrl.$state.go('admin');
+	 		}
+	 	}
+	 	else{
+	 		ctrl.auth_btn = 'Invalid Password';
+	 	}
+		
+	 },function(error){
+	 	console.log(error);
+	 	ctrl.auth_btn = "Error: Check console";
+	});
 }
+

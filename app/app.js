@@ -11,7 +11,7 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
   .state('login',{
    url:'/login',
    templateUrl:'site/partials/login.html',
-   controller:'loginCtrl as ctrl',
+   controller:'loginCtrl as ctrl'
   })
   .state('admin.add_product',{
     url:'/add_product',
@@ -21,12 +21,12 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
   .state('admin',{
     url:'/admin',
     templateUrl:'site/partials/admin.html',
-    controller:'adminCtrl as ctrl',
+    controller:'adminCtrl as ctrl'
   })
   .state('shop',{
     url:'/shop',
     templateUrl:'site/partials/shop-main.html',
-    controller:'shopCtrl as ctrl',
+    controller:'shopCtrl as ctrl'
   });
 
 	$httpProvider.interceptors.push(function(){
